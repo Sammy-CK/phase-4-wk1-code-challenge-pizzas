@@ -19,8 +19,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_19_045439) do
   end
 
   create_table "restaurant_pizzas", force: :cascade do |t|
-    t.integer "restaurant_id", null: false
+    t.integer "price"
     t.integer "pizza_id", null: false
+    t.integer "restaurant_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
