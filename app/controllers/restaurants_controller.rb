@@ -16,6 +16,12 @@ class RestaurantsController < ApplicationController
         render json: {}, status: :no_content
     end
 
+    def create
+        restaurant = Restaurant.create!(name: params[:name], address: params[:address])
+        # byebug
+        render json: restaurant, status: :created
+    end
+
 
     private
 
