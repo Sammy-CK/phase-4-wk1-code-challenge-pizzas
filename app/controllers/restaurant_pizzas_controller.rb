@@ -1,6 +1,8 @@
 class RestaurantPizzasController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :restaurantpizza_invalid
     wrap_parameters format: []
+
+    # POST /restaurant_pizzas
     def create
        restaurant = RestaurantPizza.create!(restaurantpizza_params)
        pizza = restaurant.pizza
