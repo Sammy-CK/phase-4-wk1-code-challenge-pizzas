@@ -3,6 +3,11 @@ This is a simple RESTful API that allows users to manage pizzas, restaurants and
 
 We have three models: Restaurant, Pizza, and RestaurantPizza.
 
+
+## Use this link to access the api and add endpoints to perform requests:
+                https://pizzas-sv6f.onrender.com/
+
+
 ## Models
 
 The following relationships have been established:
