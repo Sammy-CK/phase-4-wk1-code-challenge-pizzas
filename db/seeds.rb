@@ -17,9 +17,9 @@ pizza2 = Pizza.create(name: "Margherita", ingredients: "Fresh mozzarella cheese,
 pizza3 = Pizza.create(name: "Supreme", ingredients:"Tomato sauce, mozzarella cheese, pepperoni, sausage, green peppers, onions, mushrooms, black olives")
 
 # Create some restaurant pizzas
-RestaurantPizza.create(price: 13, restaurant: restaurant1.id, pizza: pizza1.id)
-RestaurantPizza.create(price: 7, restaurant: restaurant1.id, pizza: pizza2.id)
-RestaurantPizza.create(price: 12, restaurant: restaurant2.id, pizza: pizza2.id)
-RestaurantPizza.create(price: 15, restaurant: restaurant2.id, pizza: pizza3.id)
-RestaurantPizza.create(price: 25, restaurant: restaurant3.id, pizza: pizza1.id)
-RestaurantPizza.create(price: 10, restaurant: restaurant3.id, pizza: pizza3.id)
+RestaurantPizza.create(price: 13, restaurant_id: restaurant1.id, pizza_id: pizza1.id)
+RestaurantPizza.create(price: 7, restaurant_id: restaurant1.id, pizza_id: pizza2.id)
+RestaurantPizza.create(price: 12, restaurant_id: restaurant2.id, pizza_id: pizza2.id)
+RestaurantPizza.create(price: 15, restaurant_id: restaurant2.id, pizza_id: pizza3.id)
+RestaurantPizza.create(price: 25, restaurant_id: restaurant3.id, pizza_id: pizza1.id)
+RestaurantPizza.create(price: 10, restaurant_id: restaurant3.id, pizza_id: pizza3.id)
